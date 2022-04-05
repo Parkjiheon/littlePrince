@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어린 왕자</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--
+    <div class="anchor1">
+        <button class="movePage" type="button" onclick="location.href='./index.html' ">1부</button>
+        <button class="movePage"type="button" onclick="location.href='./index2.html' ">2부</button>
+        <button class="movePage"type="button" onclick="location.href='./index3.html' ">3부</button>
+        <button class="movePage"type="button" onclick="location.href='./index4.html' ">4부</button>
+        <button class="movePage"type="button" onclick="location.href='./index5.html' ">5부</button>
+        <button class="movePage"type="button" onclick="location.href='./index6.html' ">6부</button>
+        <button class="movePage"type="button" onclick="location.href='./index7.html' ">7부</button>
+        <button class="movePage"type="button" onclick="location.href='./index8.html' ">8부</button>
+    </div>
+    -->
+
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:#f44336;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">홈</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">마이 페이지</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="balloon-outline"></ion-icon>
+                    </span>
+                    <span class="text">여행하기</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2196f3;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="square-outline"></ion-icon>
+                    </span>
+                    <span class="text">광장</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#b145e9;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </span>
+                    <span class="text">묻고 답하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wholePage">
+        <button id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+        <!-- Book -->
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <h1>표지</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <div class="contentName"> <p>여섯 살 시절 나는 『모험기』라는 제목의 원시림 이야기책
+                            에서 멋진 그림 하나를 본 적이 있다. 맹수를 삼키는 보아 뱀 
+                            그림이었다. 위의 그림은 그걸 옮겨 그려 본 것이다.</p> </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <img src="./images/1부/7.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <img src="./images/1부/8.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <img src="./images/1부/9.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <img src="./images/1부/10.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 4 -->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <img src="./images/1부/11.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <img src="./images/1부/12.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 5 -->
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <img src="./images/1부/13.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <img src="./images/1부/14.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 6 -->
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <img src="./images/1부/15.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b6" class="back-content">
+                        <img src="./images/1부/16.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 7 -->
+            <div id="p7" class="paper">
+                <div class="front">
+                    <div id="f7" class="front-content">
+                        <img src="./images/1부/17.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b7" class="back-content">
+                        <img src="./images/1부/18.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 8 -->
+            <div id="p8" class="paper">
+                <div class="front">
+                    <div id="f8" class="front-content">
+                        <img src="./images/1부/19.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b8" class="back-content">
+                        <img src="./images/1부/20.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 9 -->
+            <div id="p9" class="paper">
+                <div class="front">
+                    <div id="f9" class="front-content">
+                        <img src="./images/1부/21.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b9" class="back-content">
+                        <img src="./images/1부/22.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 10 -->
+            <div id="p10" class="paper">
+                <div class="front">
+                    <div id="f10" class="front-content">
+                        <img src="./images/1부/23.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b10" class="back-content">
+                        <img src="./images/1부/24.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 11 -->
+            <div id="p11" class="paper">
+                <div class="front">
+                    <div id="f11" class="front-content">
+                        <img src="./images/1부/25.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b11" class="back-content">
+                        <img src="./images/1부/26.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 12 -->
+            <div id="p12" class="paper">
+                <div class="front">
+                    <div id="f12" class="front-content">
+                        <img src="./images/1부/27.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b12" class="back-content">
+                        <img src="./images/1부/28.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 13 -->
+            <div id="p13" class="paper">
+                <div class="front">
+                    <div id="f13" class="front-content">
+                        <img src="./images/1부/29.jpg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b13" class="back-content">
+                        <img src="./images/1부/30.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Next Button -->
+        <button id="next-btn">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+        <!--페이지가 다 끝나면 나타나야함.-->
+        <div class="quizShow">
+            <div class="home-box custom-box">
+                <h3>단원명</h3>
+                <p>전체 문제 수: <span class="total-question"></span> 문제</p>
+                <button type="button" class="btn" onclick="startQuiz()">시작!!</button>
+            </div>
+
+            <div class="quiz-box custom-box hide">
+                <div class="question-number">
+         
+                </div>
+                <div class="question-text">
+         
+                </div> 
+                <div class="option-container">
+         
+                </div>
+                <div class="next-question-btn">
+                    <button type="button" class="btn" onclick="next()">다음 문제</button>
+                </div>
+                <div class="answers-indicator">
+          
+                </div>
+            </div>
+        
+            <div class="result-box custom-box hide">
+                <h1>결과</h1>
+                <table>
+                    <tr>
+                        <td>전체 문제 수</td>
+                        <td><span class="total-question"></span></td>
+                    </tr>
+                    <tr>
+                        <td>풀어본 문제 수</td>
+                        <td><span class="total-attempt"></span></td>
+                    </tr>
+                    <tr>
+                        <td>맞춘 문제 수</td>
+                        <td><span class="total-correct"></span></td>
+                    </tr>
+                    <tr>
+                        <td>틀린 문제 수</td>
+                        <td><span class="total-wrong"></span></td>
+                    </tr>
+                    <tr>
+                        <td>정답률</td>
+                        <td><span class="percentage"></span></td>
+                    </tr>
+                    <tr>
+                        <td>당신의 점수는?</td>
+                        <td><span class="total-score"></span></td>
+                    </tr>
+                </table>
+                <button type="button" class="btn" onclick="tryAgainQuiz()">다시 풀어볼까요?</button>
+                <button type="button" class="btn" onclick="goToHome()">처음으로</button>
+            </div>
+        
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
