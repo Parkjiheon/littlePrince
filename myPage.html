@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어린 왕자</title>
+    <link rel="stylesheet" href="./myPage.css">
+
+</head>
+<body>
+    <video id="videoBG" autoplay muted loop>
+        <source src="../밤하늘.mp4" type="video/mp4">
+    </video>
+    <!--
+    <div class="anchor1">
+        <button class="movePage" type="button" onclick="location.href='./index.html' ">1부</button>
+        <button class="movePage"type="button" onclick="location.href='./index2.html' ">2부</button>
+        <button class="movePage"type="button" onclick="location.href='./index3.html' ">3부</button>
+        <button class="movePage"type="button" onclick="location.href='./index4.html' ">4부</button>
+        <button class="movePage"type="button" onclick="location.href='./index5.html' ">5부</button>
+        <button class="movePage"type="button" onclick="location.href='./index6.html' ">6부</button>
+        <button class="movePage"type="button" onclick="location.href='./index7.html' ">7부</button>
+        <button class="movePage"type="button" onclick="location.href='./index8.html' ">8부</button>
+    </div>
+    -->
+    <!--1장: 어린왕자와 만남(1~6) / 2장: 장미(7~9) / 3장: 소행성 여행(10~16) /4장: 지구에서의 여행(17~23) / 5장: 이별(24~27)-->
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:#f44336;">
+                <a href="../index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">홈</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="../myPage/myPage.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">마이 페이지</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="../Travel/travel.html">
+                    <span class="icon">
+                        <ion-icon name="balloon-outline"></ion-icon>
+                    </span>
+                    <span class="text">여행하기</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2196f3;">
+                <a href="../square/square.html">
+                    <span class="icon">
+                        <ion-icon name="square-outline"></ion-icon>
+                    </span>
+                    <span class="text">광장</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#b145e9;">
+                <a href="../question/question.html">
+                    <span class="icon">
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </span>
+                    <span class="text">묻고 답하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    
+  <div class="whole">
+    <div class="profile">
+        <div class="userImage"></div>
+        <div class="userInfo">
+            <div class="userId">유저아이디</div>
+            <div class="userName">유저이름</div>
+        </div>
+    </div>
+    <div class="section">
+        
+        <!--Current Menu-->
+        <input type="radio" name="A" id="home" checked>
+        <input type="radio" name="A" id="html">
+        <input type="radio" name="A" id="css">
+        <input type="radio" name="A" id="code">
+        <input type="radio" name="A" id="js">
+
+        <div class="nav">
+            <strong>
+                <label for="home"><span>1장<x/span></label>
+                <label for="html"><span>2장<x/span></label>
+                <label for="css"><span>3장<x/span></label>
+                <label for="code"><span>4장<x/span></label>
+                <label for="js"><span>5장<x/span></label>
+            </strong>
+            <span class="underline"></span>
+        </div>
+
+        <main>
+            <div class="firstChapter1">
+
+                
+                <button id="edit">수정하기
+                <button id="sendSquare">광장으로 보내기 
+            </div>
+            
+
+            <div>
+                <fieldset>
+                    <!--<legend>1장</legend>-->
+                    <p class="content2">
+
+                    </p>
+
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>CSS Page</legend>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and 
+                    </p>
+                    <a href="#" style="background:#00a3c8;">View-more...</a>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Code Page</legend>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and 
+                    </p>
+                    <a href="#" style="background:red;">View-more...</a>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Javascript Page</legend>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and 
+                    </p>
+                    <a href="#" style="background:#ff7600;">View-more...</a>
+                </fieldset>
+            </div>
+        </main>
+    </div>
+  </div>
+    
+   
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="./html2canvas.min.js"></script>
+    
+
+    
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCTmrKQFeOoFA20axKRYoGB_vuj2pL5LBA",
+      authDomain: "dokdoprince-b4990.firebaseapp.com",
+      projectId: "dokdoprince-b4990",
+      storageBucket: "dokdoprince-b4990.appspot.com",
+      messagingSenderId: "1084658589881",
+      appId: "1:1084658589881:web:13b488732f2a6cd918fb68"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script>
+    const db = firebase.firestore();
+    var 입장확인이름 = JSON.parse(localStorage.getItem('user')).displayName;
+
+
+    db.collection('answer1').where("self","array-contains", 입장확인이름).get().then((result)=>{
+        result.forEach((doc)=>{
+            var template1 = 
+                           `
+                            <div class="st11">첫 번쨰 질문</div>
+                            <div class="st7">이 상자안에는 어린 왕자가 원했던 양이 들어있었어요. 만약 여러분들이 원하는 것도 이 상자안에 들어있다면 그 것에 대해 설명해볼까요?</div>
+                            <div class="st21">
+                                <img src="./양4.png">
+                                <h3>${doc.data().firstAnswer}</h3>
+                            </div>
+            
+                            <div class="st1">두 번째 질문</div>
+                            <div class="st10"><p>
+                                터키의 한 천문학자는 옷차림으로 인해 자신의 발견이 의심을 받았습니다. 자신도 겉모습으로 인한 편견 때문에 오해를 받거나 오해를 한 적이 있다면 설명해볼까요? 
+                                </p>
+                                </div>
+                            <div class="st15">
+                                <h3>${doc.data().secondAnswer}</h3>
+                            </div>
+            
+                            <div class="st24"></div>
+            
+                            <div class="st19">세 번째 질문</div>
+                            <div class="st5">어린 왕자는 자신의 별에 바오밥나무가 자라지 않도록 매일 세수를 시켜주었습니다. 우리 지구에도 바오밥나무와 같이 매일 청소를 해줘야하는 것이 있다면 무엇일까요?</div>
+                            <div class="st18">
+                                <img src="./바오밥나무들.png">
+                                <h3>${doc.data().thirdAnswer}</h3>
+                            </div>
+                        
+                            <div class="st13">네 번째 질문</div>
+                            <div class="st17">어린 왕자는 슬플 때 해가 저무는 광경을 본다고 합니다. 여러분들은 슬플 때 마음을 달래기 위해 어떤 행동을 하나요?</div>
+                            <div class="st12"><h3>${doc.data().fourthAnswer}</h3></div>
+                            `
+            $('.firstChapter1').append(template1)
+        })
+    })
+
+
+    db.collection('answer2').get().then((result)=>{
+        result.forEach((doc)=>{
+            var template = `1번 답 <h3>${doc.data().firstAnswer}</h3>
+            2번 답 <h3>${doc.data().secondAnswer}</h3>
+            3번 답 <h3>${doc.data().thirdAnswer}</h3>
+            4번 답 <h3>${doc.data().fourthAnswer}</h3>`
+
+            $('.content2').append(template)
+        })
+    })
+    
+    var 쿼리스트링 = new URLSearchParams(window.location.search);
+
+    $('#edit').click(function(){
+        var 입장확인이름 = JSON.parse(localStorage.getItem('user')).displayName;
+        db.collection('answer1').where("self","array-contains", 입장확인이름).get().then((result)=>{
+        result.forEach((doc)=>{
+            if(doc.data().self[0] === 입장확인이름){
+                location.href=`../handout/1장/firstEdit.html`
+            }else{
+                alert("로그인좀해라")
+            }
+        })
+    })
+    })
+
+    let block = document.querySelector('main')
+
+    $('#sendSquare').click(function(){
+
+        
+        html2canvas(block).then(canvas => {
+		saveAs(canvas.toDataURL(), 'Photo')
+        alert("광장으로 이동합니다. 나의 생각을 공유해보세요")
+        //광장으로 리디렉션
+        })
+    })
+
+	function saveAs(url, fileName){
+		let link = document.createElement('a');
+		link.href=url;
+		link.download = fileName;
+		link.click()
+	}
+
+    
+
+
+    $('.userId').html(JSON.parse(localStorage.getItem('user')).email);
+    $('.userName').html(JSON.parse(localStorage.getItem('user')).displayName);
+  </script>
+
+  <script>
+    
+    const navigation = document.querySelector('.navigation');
+    const list = document.querySelectorAll('.list');
+    
+    $('.menuToggle').click(function(){
+        navigation.classList.toggle('open')
+    })
+
+    function activeLink(){
+        list.forEach((item) => 
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    list.forEach((item) => 
+    item.addEventListener('click', activeLink));
+
+
+  </script>
+
+</body>
+</html>
